@@ -1,5 +1,4 @@
 
-
 .search{
     display: flex;
 }
@@ -61,8 +60,8 @@ nav{
 }
 
 main{
-    background-image: url(images/bg-img.jpg);
-    background-size: 100%;
+    background-image: url(images/bg-image.png);
+    background-size: 150%;
     background-repeat: no-repeat;
     color: #FFF;
     padding-bottom: 10rem;
@@ -283,16 +282,532 @@ header a:hover {
     background-color: rgb(175, 42, 111);
 }
 
+/* Contact Page */
+#contact-form{
+    margin: 10rem 0 15rem;
+}
 
+#contact-form h2{
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+}
+
+#contact-form label{
+    font-weight: 700;
+}
+
+#contact-form input {
+    background-color: #00000029;
+    width: 30%;
+    padding: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+#contact-form input:focus{
+    background-color: #FFF;
+}
+
+.contact-btn{
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    border: none;
+    background-color: #1B0B1C;
+    color: #FFF;
+}
+
+.contact-btn:hover{
+    background-color: rgb(40, 12, 68);
+}
+
+/* Pricing Page */
+
+#pricing-CTA {
+    text-align: center;
+    margin: 5rem;
+}
+
+.pricing-CTA_div {
+    margin-top: 5rem;
+}
+
+.pricing-CTA_div>h2 {
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.pricing-CTA_div>p {
+    margin: 0 7rem;
+}
+
+#price-list {
+    background-color: #1B0B1C;
+    color: #FFF;
+    line-height: 2;
+    padding: 5rem;
+}
+
+#price-list h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+table {
+    text-align: center;
+}
+
+#price-list .table {
+    width: 60%;
+    color: #FFF;
+    position: relative;
+    left: 14rem;
+}
+
+#price-list h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+    margin-top: 2rem;
+}
+
+#price-info {
+    line-height: 2;
+    margin: 3rem 0;
+}
+
+#price-info h5 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#price-info h6 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+#price-info a {
+    color: #FF78BD;
+    font-weight: 700;
+    display: block;
+}
+
+#price-info a:hover {
+    color: rgb(248, 17, 136);
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+}
+
+#price-info .table {
+    width: 60%;
+    border-color: #000;
+    position: relative;
+    left: 3rem;
+}
+
+.table-text {
+    position: relative;
+    left: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Signup Page */
+#signup{
+    margin: 6rem 0 15rem;
+    display: block;
+    text-align: center;
+}
+
+.signup-alert {
+    text-align: left;
+    background-color: #D2F2E5;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+#signup h2{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+#signup form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#signup label{
+    display: block;
+}
+
+#signup input{
+    padding: 2.5rem;
+    margin-bottom: 2.2rem;
+    border-color: rgb(141, 141, 141);
+    border-radius: 0.5rem;
+    width: 45rem;
+}
+
+.signup-btn{
+    padding: 1.9rem 10rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    border: none;
+    background-color: #1B0B1C;
+    color: #FFF;
+    width: 100%;
+}
+
+.signup-btn:hover {
+    background-color: rgb(40, 12, 68);
+}
+
+.facebook-btn, .google-btn{
+    padding: 1.5rem 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    border: 1px solid rgb(179, 173, 173);
+    border-radius: 0.5rem;
+    background-color: #FFF;
+    color: #000;
+    width: 30%;
+}
+
+.facebook-btn:hover, .google-btn:hover{
+    border-color: #110B17;
+}
+
+.facebook-btn{
+    margin-right: 3rem;
+}
+
+#signup .facebook-icon{
+    width: 1rem;
+    margin-right: 2rem;
+}
+
+#signup .google-icon{
+    width: 2rem;
+    margin-right: 2rem;
+}
+
+#signup h6{
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+.signin-link{
+    margin-top: 3rem;
+}
+
+.signin-link a{
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.signin-link a:hover{
+    color: rgb(25, 66, 150);
+}
+
+/* Signin page */
+
+#signin{
+    margin: 10rem 0 15rem;
+    display: block;
+    text-align: center;
+}
+
+#signin h2{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+#signin form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#signin label{
+    display: block;
+}
+
+#signin input{
+    padding: 2.5rem;
+    margin-bottom: 2.2rem;
+    border-color: rgb(141, 141, 141);
+    border-radius: 0.5rem;
+    width: 45rem;
+}
+
+.signin-btn{
+    padding: 1.9rem 10rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    border: none;
+    background-color: #1B0B1C;
+    color: #FFF;
+    width: 100%;
+}
+
+.signin-btn:hover {
+    background-color: rgb(40, 12, 68);
+}
+
+#signin p{
+    margin-top: 3rem;
+    font-weight: 700;
+}
+
+.fpassword-link a{
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.fpassword-link a:hover {
+    color: rgb(25, 66, 150);
+}
+
+.signup-link a{
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.signup-link a:hover{
+    color: rgb(25, 66, 150);
+}
+
+.border-area{
+    box-shadow: #00000029 0px 2px 8px;
+    padding: 2rem 0;
+}
+
+/* Reset Password Page */
+#reset-password {
+    margin: 5rem 0 15rem;
+    display: block;
+    text-align: center;
+}
+
+#reset-password h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+#reset-password form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#reset-password input {
+    padding: 2.5rem;
+    margin-bottom: 2.2rem;
+    border-color: rgb(141, 141, 141);
+    border-radius: 0.5rem;
+    width: 45rem;
+}
+
+.signin-btn {
+    padding: 1.9rem 10rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    border: none;
+    background-color: #1B0B1C;
+    color: #FFF;
+    width: 100%;
+}
+
+.resetpassword-btn:hover {
+    background-color: rgb(40, 12, 68);
+}
+
+#reset-password p {
+    margin-top: 3rem;
+    font-weight: 700;
+}
+
+/* List Of Blocked Names Pages */
+#blocked-names{
+    margin: 5rem 0;
+}
+
+#blocked-names h3{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+#blocked-names h6{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem 0;
+}
+
+/* Dashboard */
+#dashboard{
+    margin: 2rem 0rem 0rem 0;
+}
+
+#collapser {
+    display: none;
+}
+
+.sidebar-heading{
+    color: rgb(155, 150, 150);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.list-group-item{
+    margin-left: 1.5rem;
+    border: none;
+}
+
+.list-group-item a{
+    color: #000;
+    font-weight: 500;
+}
+
+.list-group-item img{
+    width: 2rem;
+    margin-right: 1.2rem;
+}
+
+.dashboard-text{
+    margin-top: 3rem;
+    padding-right: 5rem;
+}
+
+.dashboard-intro p {
+    color: red;
+}
+
+.dashboard-intro a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.sender_input{
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 5px rgb(184, 181, 181);
+}
+
+.recipient_input{
+    padding: 2rem 1.5rem 8rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 3px 8px rgb(184, 181, 181);
+}
+
+.form-check{
+    margin-left: 3rem;
+}
+
+.dashboard-text textarea{
+    border-radius: 0.5rem;
+    box-shadow: 0px 3px 8px rgb(184, 181, 181);
+}
+
+.word-counter{
+    float: right;
+}
+
+.num_of_characters, .num_of_pages{
+    background-color: #00000029;
+    padding: 3px 15px;
+}
+
+.dashboard-text .input-group{
+    width: 50%;
+}
+
+.dashboard-text h6{
+    margin: 1.5rem 0 0.8rem;
+}
+
+.row-input{
+    width: 20%;
+}
+
+.upload-btn {
+    padding: 0.6rem 2rem;
+    margin: 1.2rem 0 1rem;
+    font-weight: 500;
+    border: none;
+    background-color: rgb(238, 234, 238);
+    color: rgb(109, 107, 107);
+}
+
+.upload-btn:hover {
+    background-color: rgb(102, 102, 102);
+    color: #FFF;
+}
+
+
+.send-SMS-btn {
+    padding: 0.8rem 1.5rem;
+    margin: 1.5rem 0 0.1rem; 
+    font-weight: 500;
+    border: none;
+    background-color: #1B0B1C;
+    color: #FFF;
+}
+
+.send-SMS-btn:hover {
+    background-color: rgb(40, 12, 68);
+}
+
+/* Message history Page */
+
+.search-input-title{
+    padding: 0 2rem;
+} 
+
+.search-input{
+    padding: 1.5rem 2.5rem;
+}
+
+.reset-btn{
+    padding: 0.6rem 2rem;
+    margin-left: 2rem;
+    font-weight: 500;
+    border: none;
+    background-color: rgb(238, 234, 238);
+    color: rgb(109, 107, 107);
+}
+
+
+
+/* Footer section */
 footer {
-    padding: 3rem;
+    margin-top: 2rem;
+    padding: 2rem;
     background: #110B17 0% 0% no-repeat padding-box;
     color: #FFF;
 }
 
 .footer-grid {
     padding-top: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
@@ -308,6 +823,11 @@ footer {
 
 .navigation {
     margin-top: 1rem;
+}
+
+.footer-hr{
+    border-color: #FFF;
+    margin-bottom: 2rem;
 }
 
 .copyright-div h6 {
@@ -333,24 +853,143 @@ footer {
 }
 
 
-@media only screen and (min-width: 768px){
+/* Pricing Page */
+
+.nav{
+    background-color: #110B17;
+    color: #FFF;
+    padding: 1rem;
+}
+
+
+@media only screen and (max-width: 991px){
+    #collapser{
+        display: block;
+    }
+
+    .sidebar{
+        display: flex;
+        float: left;
+    }
+
+    
+}
+
+
+@media only screen and (min-width: 899px){
     #hamburger{
         display: none;
     }
 }
 
-@media only screen and (max-width: 800px){
-    .nav-ul{
-        display: none;
-        flex-direction: column;
-        width: 100%;
+@media only screen and (max-width: 990px) {
+
+    /* Pre nav */
+    .pre-nav #row {
+        display: block;
+        text-align: center;
     }
 
-    .nav-ul.show{
+    .search input {
+        color: #FFF;
+        background-color: #000;
+        opacity: 0.5;
+        padding: 1.2rem 1.5rem;
+    }
+
+    ::placeholder {
+        color: #FFF;
+    }
+
+    .search i {
+        color: #FFF;
+        position: relative;
+        bottom: 1.8rem;
+        float: right;
+        margin-right: 1.2rem;
+    }
+
+    #row a {
+        font-size: 1.5rem;
+        color: #000;
+    }
+
+    .row .fa-sign-out-alt {
+        font-size: 1.7rem;
+        margin: 1.2rem 0;
+    }
+
+    .nav-ul {
+        display: none;
+        flex-direction: column;
+        width: 50%;
+        padding: 2rem 0;
+        opacity: 0.8;
+        position: absolute;
+        top: 12.5rem;
+        right: 1.5rem;
+        background-color: #000;
+        z-index: 1;
+    }
+
+    .nav-ul .active {
+        border-bottom: solid 2px rgb(247, 36, 247);
+        font-weight: 700;
+    }
+
+    .nav-ul a:hover {
+        border-bottom: solid 2px rgb(247, 36, 247);
+    }
+
+    .nav-ul.show {
         display: flex;
     }
 
-    #hambuger{
+    #hambuger {
         display: block;
     }
+
+    main {
+        background-image: url(images/bg-image.png);
+        background-size: 250%;
+        background-repeat: no-repeat;
+        color: #FFF;
+        padding-bottom: 2rem;
+    }
+
+    header {
+        text-align: center;
+        margin-top: 3rem;
+        padding: 1rem;
+    }
+
+    .header-text {
+        color: rgb(240, 240, 240);
+        font-weight: 700;
+        /* font-size: 1rem; */
+        line-height: 1.5;
+    }
+
+    header a {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    header a:hover {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    .header-btn:hover {
+        border: #FFF solid 2px;
+        background-color: rgb(247, 36, 247);
+    }
+
+    .header-btn {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+        padding: 1rem 3rem;
+        border: rgb(247, 36, 247) solid 2px;
+    }
 }
+

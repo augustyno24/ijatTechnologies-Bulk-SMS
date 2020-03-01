@@ -1,0 +1,719 @@
+
+.navbar{
+    background-color: #110B17;
+}
+
+a{
+    color: #F86B27;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(201, 78, 17);
+    text-decoration: none;
+}
+
+#products h5{
+    margin-left: 3rem;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.product img{
+    width: 8rem;
+    border-radius: 25rem;
+    margin-bottom: 1rem;
+}
+
+.product h6{
+    color: #FFF;
+}
+
+.btn-outline-info {
+    color: #1592E6;
+    border-color: #1592E6;
+}
+
+.btn-outline-info:hover {
+    color: #fff;
+    background-color: #1592E6;
+    border-color: #1592E6;
+}
+
+.btn-outline-info:focus,
+.btn-outline-info.focus {
+    box-shadow: 0 0 0 0.2rem #1592E6
+}
+
+.btn-outline-info.disabled,
+.btn-outline-info:disabled {
+    color: #17a2b8;
+    background-color: transparent;
+}
+
+.btn-outline-info:not(:disabled):not(.disabled):active,
+.btn-outline-info:not(:disabled):not(.disabled).active,
+.show>.btn-outline-info.dropdown-toggle {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+
+.btn-outline-info:not(:disabled):not(.disabled):active,
+.btn-outline-info:not(:disabled):not(.disabled).active,
+.show>.btn-outline-info.dropdown-toggle {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-outline-info:not(:disabled):not(.disabled):active:focus,
+.btn-outline-info:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-info.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #17a2b8;
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+
+
+@media only screen and (min-width: 992px){
+
+    html, body{
+        overflow-x: hidden;
+    }
+
+    body{
+        line-height: 2;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    nav{
+        margin: 0 4% 1%;
+    }
+
+    .main-section{
+        background-image: url('images/business-chairs-company-coworking-7070.jpg');
+        background-size: 155%;
+        padding: 18% 15% 15% 0;
+        margin-right: auto;
+    }
+
+    .navbar-nav{
+        margin-left: 62%;
+    }
+
+    .CTA{
+        background-color: rgba(0, 0, 0, 0.449);
+    }
+
+    .intro-div{
+        color: #FFF;
+        padding-bottom: 5%;
+        margin-left: 5%;
+        padding-right: 30%;
+    }
+
+    .intro-heading{
+        font-size: 85px;
+        font-weight: 900;
+    }
+
+    .intro-div span{
+        color: #1492E6;
+    }
+
+    .intro-div p{
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    #about{
+        padding: 5% 5% 15% 5%;
+        line-height: 2;
+        margin-right: auto;
+    }
+
+    #about h5{
+        text-align: center;
+        margin-bottom: 4%;
+        line-height: 2;
+    }
+
+    #about p{
+        text-align: center;
+        font-size: large;
+    }
+
+    .branding h1{
+        margin-left: 40%;
+        padding: 0;
+        font-weight: 900;
+        position: relative;
+    }
+
+    .and h2{
+        text-align: center;
+        position: relative;
+        top: 180px;
+        background-color: #1592E6;
+        padding: 20% 10%;
+        margin: 0;
+    }
+
+    .homepage-icons img {
+        margin-left: 15%;
+        max-width: 25rem;
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 0.2fr 1fr;
+        grid-column-gap: 1.5%;
+    }
+
+    .homepage-icons{
+        max-width: 1%;
+    }
+
+    #branding-text{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 30% 30%;
+        grid-column-gap: 35%;
+        justify-items: right;
+        margin-left: 12%;
+        margin-right: 5%;
+    }
+
+    #products{
+        background-color: #E4E4E4;
+        padding: 5% 0;
+        margin-right: auto;
+    }
+
+    .products{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .product-container{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5%;
+    }
+
+    .product {
+        padding: 8% 5%;
+        border-radius: 25%;
+    }
+
+    .product-1{
+        justify-self: end;
+        background-color: #82c21a;
+    }
+
+    .product-2 {
+        justify-self: center;
+        background-color: #eb6b34;
+    }
+
+    .product-3 {
+        justify-self: center;
+        background-color: #34b4eb;
+    }
+
+    .product-4 {
+        justify-self: start;
+        background-color: #eb34d2;
+    }
+
+    .product-5 {
+        justify-self: end;
+        background-color: #9ea608;
+    }
+
+    .product-6 {
+        justify-self: center;
+        background-color: #0ee3ca;
+    }
+
+    .product-text{
+        position: relative;
+        top: 160px;
+    }
+
+    .product-text h4{
+        font-size: x-large;
+        font-weight: 700;
+    }
+
+    #testimony{
+        padding-top: 5%;
+        background-color: #F5F5F5;
+        padding-bottom: 10%;
+        margin-right: auto;
+    }
+
+    .testimony-rating {
+        margin-left: 15%;
+    }
+
+    .star-rating {
+        position: relative;
+        top: 2.5rem;
+        max-width: 2%;
+    }
+
+    #testimony h5 {
+        position: relative;
+        left: 9rem;
+        top: 4px;
+    }
+
+    #testimony small{
+        font-size: small;
+    }
+
+    .testimony-texts{
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10%;
+        justify-items: center;
+    }
+
+    .testimony{
+        text-align: center;
+        background-color: #FFF;
+        padding: 35% 3%;
+        font-size: 15px;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem #00000029;
+    }
+
+    footer{
+        padding: 3rem;
+        background: #110B17 0% 0% no-repeat padding-box;
+        color: #FFF;
+    }
+
+    .footer-grid{
+        padding-top: 5%;
+        padding-bottom: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .footer-nav p{
+        margin-top: 2rem;
+    }
+
+    .legal-div{
+       margin-top: 1rem;
+    }
+
+    .navigation{
+        margin-top: 1rem;
+    }
+
+    .copyright-div h6{
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-nav a{
+        color: rgb(177, 177, 177);
+        text-decoration: none;
+    }
+
+    .footer-nav a:hover{
+        color: #FFF;
+    }
+
+    .fab {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        background-color: #FFF;
+        color: #1A2438;
+        padding: 3%;
+    }
+}
+
+ 
+ @media only screen and (max-width: 991px){
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        line-height: 2;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    nav {
+        margin: 0 4% 1%;
+    }
+
+    .main-section {
+        background-image: url('images/business-chairs-company-coworking-7070.jpg');
+        background-size: 155%;
+        padding: 18% 15% 15% 0;
+        margin-right: auto;
+    }
+
+    .navbar-nav {
+        margin-left: 62%;
+    }
+
+    .CTA {
+        background-color: rgba(0, 0, 0, 0.449);
+    }
+
+    .intro-div {
+        color: #FFF;
+        padding-bottom: 5%;
+        margin-left: 5%;
+        padding-right: 30%;
+    }
+
+    .intro-heading {
+        font-size: 45px;
+        font-weight: 900;
+    }
+
+    .intro-div span {
+        color: #1492E6;
+    }
+
+    .intro-div p {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    #about{
+        padding-top: 5%;
+    }
+
+    #about h5 {
+        margin-top: 2rem;
+        text-align: center;
+        margin-bottom: 5%;
+        font-size: 1.2rem;
+    }
+
+    #about p {
+       text-align: center;
+       line-height: 2;
+       font-size: medium;
+    }
+
+
+
+
+    .branding h1{
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: 1fr  1fr;
+        grid-column-gap: 1%;
+        justify-items: center;
+    }
+
+    .homepage-icons img {
+        margin-top: 2rem;
+        max-width: 14rem;
+    }
+    
+    .and{
+        display: none;
+    }
+
+    #branding-text {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 3%;
+        justify-items: left;
+    }
+
+
+    #products {
+        background-color: #E4E4E4;
+        margin-top: 5rem;
+        padding-top: 5rem;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-gap: 2rem;
+        justify-items: center;
+        padding-bottom: 3rem;
+    }
+
+    .product-container {
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5%;
+    }
+
+    .product {
+        text-align: center;
+        padding: 2rem 1rem;
+        border-radius: 25%;
+        margin-bottom: 2rem;
+    }
+
+    .product-1 {
+        background-color: #82c21a;
+    }
+
+    .product-2 {
+        background-color: #eb6b34;
+    }
+
+    .product-3 {
+        background-color: #34b4eb;
+    }
+
+    .product-4 {
+        background-color: #eb34d2;
+    }
+
+    .product-5 {
+        background-color: #9ea608;
+    }
+
+    .product-6 {
+        background-color: #0ee3ca;
+    }
+
+    .product-text {
+        text-align: center;
+        position: relative;
+        top: 160px;
+    }
+
+    .product-text h4 {
+        font-size: x-large;
+        font-weight: 700;
+    }
+
+
+
+    #testimony {
+        background-color: #F5F5F5;
+        padding-bottom: 10%;
+    }
+
+    .testimony-rating {
+        padding-top: 3rem;
+        margin-left: 3%;
+    }
+
+    .star-rating {
+        max-width: 1.1rem;
+        position: relative;
+        top: 2.4rem;
+        left: -5rem;
+    }
+
+    #testimony h5{
+        position: relative;
+        left: 3rem;
+    }
+
+    #testimony small {
+        font-size: small;
+    }
+
+    .testimony-texts {
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10%;
+        justify-items: center;
+    }
+
+    .testimony {
+        max-width: 25rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        background-color: #FFF;
+        padding: 10% 3%;
+        font-size: 15px;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem #00000029;
+    }
+    
+    .about{
+        text-align: left;
+    }
+
+      footer {
+          padding-top: 5rem;
+          background-color: #110B17;
+          color: #FFF;
+      }
+
+      .footer-grid {
+          margin-top: 1rem;
+          padding-bottom: 1rem;
+          display: inline-block;
+          text-align: center;
+      }
+
+      footer img{
+          max-width: 10rem;
+          margin-bottom: 1rem;
+      }
+
+        .legal-div {
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+        }
+
+        .navigation {
+            margin-top: 4rem;
+        }
+
+        .footer-nav p {
+            display: inline;
+            padding: 5px;
+        }
+
+        .footer-nav a {
+            color: rgb(177, 177, 177);
+            text-decoration: none;
+        }
+
+        .footer-nav a:hover {
+            color: #FFF;
+        }   
+
+      .fab{
+          margin-left: 15px;
+          background-color: #FFF;
+          color: #1A2438;
+          padding: 3%;
+      }
+
+ } 
+
+
+
+ @media only screen and (max-width: 500px){
+    .intro-div{
+        margin-top: 5rem;
+    }
+
+    .products {
+        display: block;
+    }
+
+    .star-rating {
+        max-width: 1.1rem;
+        position: relative;
+        text-align: center;
+        top: -1rem;
+        left: 7rem;
+    }
+    
+    .product-text {
+        text-align: center;
+        position: relative;
+        top: 10px;
+    }
+
+    #testimony h5 {
+        text-align: center;
+        position: relative;
+        left: -0.5rem;
+    }
+
+    .branding h1 {
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .homepage-icons img{
+        margin-left: 2.5rem;
+    }
+
+    .row {
+        display: block;
+    }
+    footer {
+        background-color: #110B17;
+        color: #FFF;
+    }
+
+    .footer-grid {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+
+    footer img {
+        max-width: 10rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .legal-div {
+        margin-top: 2rem;
+    }
+
+    .navigation {
+        margin-top: 4rem;
+    }
+
+    .footer-nav p {
+        display: inline;
+        padding: 5px;
+    }
+
+    .footer-nav a {
+        color: rgb(177, 177, 177);
+        text-decoration: none;
+    }
+
+    .footer-nav a:hover {
+        color: #FFF;
+    }
+ }
+
+
+ @media(max-width: 768px){
+     .navbar-nav{
+         position: relative;
+         right: 7rem;
+         width: 50%;
+         text-align: center;
+     }
+
+     .navbar-nav .nav-link{
+         padding: 1rem;
+     }
+
+
+ }
