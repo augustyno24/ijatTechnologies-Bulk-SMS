@@ -57,13 +57,13 @@
               <li class="list-group-item sidebar-heading">BULK SMS</li>
               
               <li class="list-group-item"><a href="compose.html"><img src="images/sidebar-compose.png" alt="icon">Compose SMS</a></li>
-              <li class="list-group-item"><a href="scheduleSMS.html"><img src="images/sidebar-schedule.png" alt="icon"> Schedule SMS</a></li>
+              <li class="list-group-item"><a href=""><img src="images/sidebar-schedule.png" alt="icon"> Schedule SMS</a></li>
               <li class="list-group-item"><a href=""><img src="images/sidebar-smart.png" alt="icon"> Smart SMS</a></li>
               
               <li class="list-group-item sidebar-heading">REPORT & LOGS</li>
 
               <li class="list-group-item"><a href=""><img src="images/sidebar-delivery.png" alt="icon">Delivery Report</a></li>
-              <li class="list-group-item"><a href="messagehistory.html"><img src="images/sidebar-compose.png" alt="icon">Message History</a></li>
+              <li class="list-group-item"><a href=""><img src="images/sidebar-compose.png" alt="icon">Message History</a></li>
               <li class="list-group-item"><a href=""><img src="images/sidebar-transaction.png" alt="icon">Transaction History</a></li>
 
               <li class="list-group-item sidebar-heading">CONTACT</li>
@@ -74,8 +74,8 @@
               <li class="list-group-item sidebar-heading">ACCOUNT & SETTINGS</li>
 
               <li class="list-group-item"><a href=""><img src="images/sidebar-dashboard.png" alt="icon">Dashboard</a></li>
-              <li class="list-group-item"><a href="profile.html"><img src="images/sidebar-profile.png" alt="icon">My Profile</a></li>
-              <li class="list-group-item"><a href="logout.html"><img src="images/sidebar-logout.png" alt="icon">Log Out</a></li>
+              <li class="list-group-item"><a href=""><img src="images/sidebar-profile.png" alt="icon">My Profile</a></li>
+              <li class="list-group-item"><a href=""><img src="images/sidebar-logout.png" alt="icon">Log Out</a></li>
               <li class="list-group-item"><a href=""><img src="images/sidebar.referral.png" alt="icon">Referral / Affiliate</a></li>
               
               <li class="list-group-item sidebar-heading">RESOURCES</li>
@@ -87,74 +87,62 @@
       </div>
 
       <div class="dashboard-text col-lg-9 expand">
-        <div class="dashboard-intro">
-          <p>Please, avoid these <a href="blockednames.html">blocked sender names and spam words</a> in your messages because messages containing any of them will not deliver and you will be charged for them. Please, take note. <a href="blockednames.html">See the list of all blocked sender names and spam words</a></p>
+        <div class="account-details">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Account</th>
+                        <th>SMS Units</th>
+                        <th>Received Credit(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="acct-name">Name: <br> <br> Ayoleyi</td>
+                        <td class="SMS-units">Total SMS Units: <br> <br> 2</td>
+                        <td class="credit-received">Total Received Credit: <br> <br> 2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="acct-email">Email: <br> <br> ayoleyi@gmail.com</td>
+                        <td class="sender-id">Total Sender IDs: <br> <br>Null</td>
+                        <td class="key-word">Total key Words: <br> <br>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="acct-create-date">Created On: <br> <br> 2020-03-10</td>
+                        <td class="used-units">Used SMS Unit: <br> <br> 0</td>
+                        <td class="available-units">Available SMS Units: <br> <br> 2</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="acct-epiration-date">Expiring On: <br> <br> No expiry</td>
+                        <td class="received-word">Used Receievd Word: <br> <br> 0</td>
+                        <td class="available-receievd">Available Received word: <br> <br> 0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="additional-account-details">
+            <h6>Additional Details</h6>
+            <p>Phone Number:</p>
+            <p>081029142333</p>
+
+            <div class="form-group">
+                <label for="Suffix">Message Suffix</label>
+                <input type="text" name="username" class="form-control" id="msg-suffix" required>
+
+                <label for="Prefix">Message Prefix</label>
+                <input type="text" name="Message Prefix" class="form-control" id="msg-prefix" required>
+
+                <button class="profile-btn">SAVE</button>
+            </div>
+            
         </div>
         
-        <label for="Sender">From</label>
-        <input class="form-control mt-1 mb-2 sender_input" type="text" name="Sender" placeholder="Enter the sender's name" required>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="Type Contact" id="type-contact" value="option1" checked>
-          <label class="form-check-label mr-5" for="Type Contact">
-            Type contact
-          </label>
-          <input class="form-check-input" type="radio" name="Upload Contact" id="upload-contact" value="option2">
-          <label class="form-check-label mr-5" for="Upload Contact">
-            Upload Contact
-          </label>
-          <input class="form-check-input" type="radio" name="Select Group" id="select-group" value="option3">
-          <label class="form-check-label" for="Select group">
-            Select group
-          </label>
-        </div>
-
-        <label class="mt-4" for="recipient">To</label>
-        <input class="form-control recipient_input" type="text" name="recipient" placeholder="Enter the destination numbers seperated by comma or a new line" required>
-      
-        <label class="mt-5" for="Message">Message <small>(Type your message in the box below and avoid spam words)</small></label>
-        <textarea name="message" id="message" cols="132" rows="10" required></textarea>
-
-        <span class="word-counter">
-          <small>Character: <b class="num_of_characters mr-3">0</b></small>
-          <small>Page: <b class="num_of_pages">0</b></small>
-        </span>
-
-        <h6>Upload Excel/CSV files</h6>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text">Upload</span>
-          </div>
-          <div class="custom-file">
-            <input type="file" class="custom-file-input" id="file-upload">
-            <label class="custom-file-label" for="file-upload">Choose file</label>
-          </div>
-        </div>
-
-        <h6>From Row Number:</h6>
-        <input type="number" class="form-control row-input" name="row-number" id="row-number" placeholder="Default '1'">
-
-        <h6>To Row Number (To-From less or equal 500):</h6>
-        <input type="number" class="form-control row-input" name="row-number-from" id="row-number-from" placeholder="Maximum range 500 (To-From)">
-
-        <button class="upload-btn">Upload</button>
-
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="FlashSMS" id="FlashSMS">
-          <label class="form-check-label" for="FlashSMS">
-            Send a <b>FlashSMS</b>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="schedule later" id="later">
-          <label class="form-check-label" for="schedule">
-            Schedule later
-          </label>
-        </div>
-
-        <button type="submit" class="send-SMS-btn">Send SMS</button>
-
-        <p><b>Download our mobile app</b> to enjoy more advanced features like picking destination numbers from your phone contacts; getting free active Nigerian GSM Database and many more. <a href="">Download IJATSMS.com. mobile app now!</a></p>
-
       </div>
     </div>
     

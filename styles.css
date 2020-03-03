@@ -1,4 +1,5 @@
 
+/* Pre-nav Section */
 .search{
     display: flex;
 }
@@ -24,12 +25,22 @@
     font-size: 1.4rem;
 }
 
+
+
+/* Navigation bar */
+
 nav{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 25px;
+}
+
+.nav {
+    background-color: #110B17;
+    color: #FFF;
+    padding: 1rem;
 }
 
 .nav-ul{
@@ -47,6 +58,16 @@ nav{
     text-decoration: none;
 }
 
+.nav .pre-nav-btn{
+    background-color: #FFF;
+    color: #000;
+}
+
+.nav .pre-nav-btn:hover{
+    background-color: rgb(155, 146, 146);
+    color: #FFF;
+}
+
 #hambuger{
     background-color: transparent;
     border: 0;
@@ -58,6 +79,8 @@ nav{
 .hambuger:focus{
     outline: none;
 }
+
+/* Home Page */
 
 main{
     background-image: url(images/bg-image.png);
@@ -282,6 +305,7 @@ header a:hover {
     background-color: rgb(175, 42, 111);
 }
 
+
 /* Contact Page */
 #contact-form{
     margin: 10rem 0 15rem;
@@ -321,8 +345,9 @@ header a:hover {
     background-color: rgb(40, 12, 68);
 }
 
-/* Pricing Page */
 
+
+/* Pricing Page */
 #pricing-CTA {
     text-align: center;
     margin: 5rem;
@@ -415,6 +440,7 @@ table {
     left: 3rem;
     margin-bottom: 3rem;
 }
+
 
 /* Signup Page */
 #signup{
@@ -740,8 +766,11 @@ table {
     width: 50%;
 }
 
-.dashboard-text h6{
-    margin: 1.5rem 0 0.8rem;
+.dashboard-intro h6{
+    margin: 1.5rem 0 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(61, 61, 61);
 }
 
 .row-input{
@@ -778,6 +807,17 @@ table {
 
 /* Message history Page */
 
+.SMS-history{
+    display: grid;
+    grid-template-columns: 28rem 15rem;
+
+    grid-column-gap: 10rem;
+}
+
+.SMS-history .input-group{
+    width: 100%;
+}
+
 .search-input-title{
     padding: 0 2rem;
 } 
@@ -786,7 +826,7 @@ table {
     padding: 1.5rem 2.5rem;
 }
 
-.reset-btn{
+.SMS-history .reset-btn{
     padding: 0.6rem 2rem;
     margin-left: 2rem;
     font-weight: 500;
@@ -795,7 +835,94 @@ table {
     color: rgb(109, 107, 107);
 }
 
+.SMS-history .reset-btn:hover{
+    background-color: rgb(190, 190, 190);
+    color: rgb(5, 5, 5);
+}
 
+.SMS-dropdown .dropdown-menu{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(238, 234, 238);
+}
+
+.SMS-dropdown .dropdown-btn{
+    padding: 0.6rem 4rem;
+    font-weight: 500;
+    border: none;
+    background-color: #FFF;
+    color: rgb(109, 107, 107);
+    border: #00000029 1px solid;
+}
+
+.SMS-dropdown .dropdown-btn:hover{
+    background-color: rgb(190, 190, 190);
+    color: rgb(5, 5, 5);
+}
+
+.SMS-history-table{
+    margin-top: 10rem;
+}
+
+.SMS-history-table th{
+    color: #707070;
+}
+
+.SMS-history-table table{
+    margin-bottom: 3rem;
+}
+
+
+.SMS-history-table .custom-select {
+    width: 5rem;
+    float: left;
+}
+
+.SMS-history-table p{
+    font-size: small;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    float: left;
+}
+
+/* Profile Page */
+.account-details th{
+    border: none;
+    font-size: 2rem;
+}
+
+.account-details td{
+    border-color: #110B17;
+}
+
+.additional-account-details{
+    margin-top: 10rem;
+}
+
+.additional-account-details h6{
+    margin: 1.5rem 0 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgb(61, 61, 61);
+}
+
+.additional-account-details label{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.profile-btn {
+    padding: 0.8rem 3rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    border: none;
+    background-color: #1B0B1C;
+    color: #FFF;
+}
+
+.profile-btn:hover {
+    background-color: rgb(40, 12, 68);
+}
 
 /* Footer section */
 footer {
@@ -852,14 +979,6 @@ footer {
     padding: 3%;
 }
 
-
-/* Pricing Page */
-
-.nav{
-    background-color: #110B17;
-    color: #FFF;
-    padding: 1rem;
-}
 
 
 @media only screen and (max-width: 991px){

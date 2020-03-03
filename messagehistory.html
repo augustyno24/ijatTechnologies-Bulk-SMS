@@ -42,7 +42,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="pricing.html">Our Pricing</a></li>
-        <li><a href="signup.html" class="btn btn-dark">Sign up Today</a></li>
+        <li><a href="signup.html" class="btn pre-nav-btn">Sign up Today</a></li>
       </ul>
     </nav>
 
@@ -92,18 +92,56 @@
         </div>
         
         <div class="SMS-history">
-            <div class="search">
-                <div class="input-group">
-                <input type="text" class="form-control search-input" placeholder="Search" required>
-                <div class="input-group-append">
-                    <span class="input-group-text search-input-title">Go</span>
-                    <button class="reset-btn">Reset</button>
-                </div>
+          <div class="SMS-search">
+            <div class="input-group">
+              <input type="text" class="form-control search-input" placeholder="Search" required>
+              <div class="input-group-append">
+                  <span class="input-group-text search-input-title">Go</span>
+                  <button class="reset-btn">Reset</button>
+              </div>
             </div>
+          </div>
+          <div class="SMS-dropdown">
+            <div class="dropdown">
+              <button class="btn dropdown-btn dropdown-toggle" type="button" id="SMS-dropdown-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Failure
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Delete</a>
+                <a class="dropdown-item" href="#">Export</a>
+                <a class="dropdown-item" href="#">More (+)</a>
+              </div>
             </div>
+          </div>
+        </div>  
+
+        <div class="SMS-history-table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>To</th>
+                <th>From</th>
+                <th>Message</th>
+                <th>Submitted</th>
+                <th>Result</th>
+                <th>Name</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+          <div class="table-result-counter">
+            <select class="custom-select">
+              <option value="1">5</option>
+              <option value="2">10</option>
+              <option value="3">15</option>
+              <option selected value="4">20</option>
+              <option value="4">25</option>
+            </select>
+            <p>Total: 0 Record(s) Found</p>
+          </div>
+
         </div>
-        
-        
       </div>
     </div>
     
