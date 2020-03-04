@@ -87,62 +87,60 @@
       </div>
 
       <div class="dashboard-text col-lg-9 expand">
-        <div class="account-details">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Account</th>
-                        <th>SMS Units</th>
-                        <th>Received Credit(s)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td class="acct-name">Name: <br> <br> Ayoleyi</td>
-                        <td class="SMS-units">Total SMS Units: <br> <br> 2</td>
-                        <td class="credit-received">Total Received Credit: <br> <br> 2</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td class="acct-email">Email: <br> <br> ayoleyi@gmail.com</td>
-                        <td class="sender-id">Total Sender IDs: <br> <br>Null</td>
-                        <td class="key-word">Total key Words: <br> <br>0</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td class="acct-create-date">Created On: <br> <br> 2020-03-10</td>
-                        <td class="used-units">Used SMS Unit: <br> <br> 0</td>
-                        <td class="available-units">Available SMS Units: <br> <br> 2</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td class="acct-epiration-date">Expiring On: <br> <br> No expiry</td>
-                        <td class="received-word">Used Receievd Word: <br> <br> 0</td>
-                        <td class="available-receievd">Available Received word: <br> <br> 0</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="additional-account-details">
-            <h6>Additional Details</h6>
-            <p>Phone Number:</p>
-            <p>081029142333</p>
-
-            <div class="form-group">
-              <label for="Suffix">Message Suffix</label>
-              <input type="text" name="username" class="form-control" id="msg-suffix" required>
-
-              <label for="Prefix">Message Prefix</label>
-              <input type="text" name="Message Prefix" class="form-control" id="msg-prefix" required>
-
-              <button class="profile-btn">SAVE</button>
-            </div>
-            
+        <div class="dashboard-intro">
+          <h6>Transaction History</h6>
         </div>
         
+        <div class="SMS-history">
+          <div class="SMS-search">
+            <div class="input-group">
+              <input type="text" class="form-control search-input" placeholder="Search" required>
+              <div class="input-group-append">
+                  <span class="input-group-text search-input-title">Go</span>
+                  <button class="reset-btn">Reset</button>
+              </div>
+            </div>
+          </div>
+          <div class="SMS-dropdown">
+            <div class="dropdown">
+              <button class="btn dropdown-btn dropdown-toggle" type="button" id="SMS-dropdown-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Failure
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Delete</a>
+                <a class="dropdown-item" href="#">Export</a>
+                <a class="dropdown-item" href="#">More (+)</a>
+              </div>
+            </div>
+          </div>
+        </div>  
+
+        <div class="SMS-history-table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Gateway</th>
+                <th>Package</th>
+                <th>Price</th>
+                <th>TXN Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+          <div class="table-result-counter">
+            <select class="custom-select">
+              <option value="1">5</option>
+              <option value="2">10</option>
+              <option value="3">15</option>
+              <option selected value="4">20</option>
+              <option value="4">25</option>
+            </select>
+            <p>Total: 0 Record(s) Found</p>
+          </div>
+
+        </div>
       </div>
     </div>
     

@@ -768,7 +768,7 @@ table {
 
 .dashboard-intro h6{
     margin: 1.5rem 0 5rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: rgb(61, 61, 61);
 }
@@ -916,6 +916,7 @@ table {
     margin-top: 2rem;
     font-weight: 500;
     border: none;
+    border-radius: 0.25rem;
     background-color: #1B0B1C;
     color: #FFF;
 }
@@ -923,6 +924,46 @@ table {
 .profile-btn:hover {
     background-color: rgb(40, 12, 68);
 }
+
+
+/* Buy Unit Page*/
+.dashboard-text h5{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.dashboard-text #SMS-units{
+    width: 15rem;
+    padding: 1.5rem;
+}
+
+.dashboard-text #amount{
+    margin-left: -2rem;
+}
+
+.dashboard-text .buy-info{
+    margin: 1.2rem 0;
+}
+
+.dashboard-text img{
+    vertical-align: text-top;
+}
+
+.buy-btn {
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #1B0B1C;
+    color: #FFF;
+}
+
+.pay-check{
+    margin-bottom: -1rem;
+}
+
 
 /* Footer section */
 footer {

@@ -87,63 +87,32 @@
       </div>
 
       <div class="dashboard-text col-lg-9 expand">
-        <div class="account-details">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Account</th>
-                        <th>SMS Units</th>
-                        <th>Received Credit(s)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td class="acct-name">Name: <br> <br> Ayoleyi</td>
-                        <td class="SMS-units">Total SMS Units: <br> <br> 2</td>
-                        <td class="credit-received">Total Received Credit: <br> <br> 2</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td class="acct-email">Email: <br> <br> ayoleyi@gmail.com</td>
-                        <td class="sender-id">Total Sender IDs: <br> <br>Null</td>
-                        <td class="key-word">Total key Words: <br> <br>0</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td class="acct-create-date">Created On: <br> <br> 2020-03-10</td>
-                        <td class="used-units">Used SMS Unit: <br> <br> 0</td>
-                        <td class="available-units">Available SMS Units: <br> <br> 2</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td class="acct-epiration-date">Expiring On: <br> <br> No expiry</td>
-                        <td class="received-word">Used Receievd Word: <br> <br> 0</td>
-                        <td class="available-receievd">Available Received word: <br> <br> 0</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="additional-account-details">
-            <h6>Additional Details</h6>
-            <p>Phone Number:</p>
-            <p>081029142333</p>
-
-            <div class="form-group">
-              <label for="Suffix">Message Suffix</label>
-              <input type="text" name="username" class="form-control" id="msg-suffix" required>
-
-              <label for="Prefix">Message Prefix</label>
-              <input type="text" name="Message Prefix" class="form-control" id="msg-prefix" required>
-
-              <button class="profile-btn">SAVE</button>
+        <h5>Buy SMS Unit Online and Get Credited Instantly</h5>
+        <div class="form-group">
+            <label for="SMS Units">SMS Units *</label>
+            <input type="text" name="SMS Units" class="form-control" id="SMS-units" required>
+            <button class="buy-btn">Get Price</button>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="amount" id="amount" value="option1" checked>
+              <label class="form-check-label" for="amount">#  NGN 0.00</label>
             </div>
-            
+            <div class="buy-info">
+              <small>Select Paystack below & click 'BUY NOW'</small>
+            </div>
+
+            <div class="form-check pay-check">
+              <input class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="paystack-payment"
+                value="option1">
+              <label class="form-check-label"
+                for="paystack-payment"><img src="images/paystack.png" alt=""> Paystack Online Payment</label>
+            </div>
         </div>
-        
+        <button class="buy-btn">Buy Now</button>
       </div>
+        
     </div>
     
 
