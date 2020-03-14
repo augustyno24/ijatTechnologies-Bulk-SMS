@@ -13,6 +13,7 @@
     
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)"href="mobile.css">
     <title>iJAT-Bulk SMS | Welcome</title>
   </head>
   <body>
@@ -32,10 +33,10 @@
     
     <main>
       <!-- Navbar section -->
-      <nav>
+      <nav id="nav" class="nav">
         <h1>ijatSMS</h1>
         <!-- <img src="images/logo.png" alt="logo"> -->
-        <button id="hamburger"><i class="fas fa-bars"></i></button>
+        <button id="nav-collapser"><i class="fas fa-bars"></i></button>
         <ul class="nav-ul" id="nav-ul">
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
@@ -185,10 +186,10 @@
     <div id="CTA-2">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7">
+          <div class="col-lg-7 col-md-12 col-sm-12">
             <h3>Create your bulk SMS account and get FREE SMS UNITS.</h3>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5 col-md-12 col-sm-12">
             <button class="btn btn-light rounded-pill">Create an account now</button>
           </div>
         </div>
@@ -199,19 +200,19 @@
       <div class="container">
         <h3>LOOKING FOR SMS SOLUTIONS?</h3>
         <h6>Fill in your details and we will get back to you.</h6>
-         <div class="">
+         <div class="form-wrap">
             <form action="" class="row">
-              <div class="CTA-3_form-div col-lg-3">
+              <div class="CTA-3_form-div col-lg-3 col-md-12">
                 <label for="FullName">Name*</label>
                 <input type="text" name="FullName" placeholder="Full Name">
               </div>
 
-              <div class="CTA-3_form-div col-lg-3">
+              <div class="CTA-3_form-div col-lg-3 col-md-12">
                 <label for="Email">Work Email*</label>
                 <input type="email" name="Email" placeholder="Company Email">
               </div>
               
-              <div class="CTA-3_form-div col-lg-3">
+              <div class="CTA-3_form-div col-lg-3 col-md-12">
                 <label for="Phone Number">Phone Number</label>
                 <input type="number" name="Phone Number" placeholder="Enter your phone number">
               </div>

@@ -13,6 +13,7 @@
     
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
     <title>iJAT-Bulk SMS | Welcome</title>
   </head>
   <body>
@@ -31,9 +32,9 @@
     </div>
     
     <!-- Navbar section -->
-    <nav class="nav">
+    <nav id="nav" class="nav">
       <h1>ijatSMS</h1>
-      <button id="hamburger"><i class="fas fa-bars"></i></button>
+      <button id="nav-collapser"><i class="fas fa-bars"></i></button>
       <ul class="nav-ul" id="nav-ul">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -41,7 +42,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="pricing.html">Our Pricing</a></li>
-        <li><a href="signup.html" class="btn pre-nav-btn">Sign up Today</a></li>
+        <li><a href="signup.html" class="btn pre-nav-btn active">Sign up Today</a></li>
       </ul>
     </nav>
 
@@ -69,8 +70,10 @@
 
             <h6>OR SIGN UP WITH</h6>
 
-            <button type="click" class="facebook-btn"><img class="facebook-icon" src="images/facebook icon.png" alt=""> Facebook</button>
-            <button type="click" class="google-btn"><img class="google-icon" src="images/Google icon.png" alt=""> Google</button>
+            <div class="btn-container">
+              <button type="click" class="facebook-btn"><img class="facebook-icon" src="images/facebook icon.png" alt=""> Facebook</button>
+              <button type="click" class="google-btn"><img class="google-icon" src="images/Google icon.png" alt=""> Google</button>
+            </div>
 
             <p>By signing in, you agree to terms of services and Privacy Policy</p>
 

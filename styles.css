@@ -1,4 +1,7 @@
-
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 /* Pre-nav Section */
 .search{
     display: flex;
@@ -25,8 +28,6 @@
     font-size: 1.4rem;
 }
 
-
-
 /* Navigation bar */
 
 nav{
@@ -37,7 +38,7 @@ nav{
     padding: 25px;
 }
 
-.nav {
+#nav {
     background-color: #110B17;
     color: #FFF;
     padding: 1rem;
@@ -45,6 +46,7 @@ nav{
 
 .nav-ul{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -58,22 +60,29 @@ nav{
     text-decoration: none;
 }
 
-.nav .pre-nav-btn{
+main nav .pre-nav-btn{
     background-color: #FFF;
     color: #000;
+    font-weight: 700;
 }
 
-.nav .pre-nav-btn:hover{
-    background-color: rgb(155, 146, 146);
+nav .pre-nav-btn:hover{
+    background-color: #000;
     color: #FFF;
+    border: 2px solid #FF78BD
 }
 
-#hambuger{
-    background-color: transparent;
-    border: 0;
-    color: #FFF;
-    cursor: pointer;
-    font-size: 20px;
+.nav-ul .active {
+    border-bottom: solid 2px rgb(247, 36, 247);
+    font-weight: 700;
+}
+
+.nav-ul a:hover {
+    border-bottom: solid 2px rgb(247, 36, 247);
+}
+
+#nav-collapser{
+    display: none;
 }
 
 .hambuger:focus{
@@ -84,7 +93,7 @@ nav{
 
 main{
     background-image: url(images/bg-image.png);
-    background-size: 150%;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #FFF;
     padding-bottom: 10rem;
@@ -217,13 +226,14 @@ header a:hover {
 
 #CTA-1 .column{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
 }
 
 #CTA-1 .column > div{
     border: 2px solid rgb(214, 214, 214);
-    width: 15rem;
+    width: 90%;
+    margin-top: 2rem;
     padding-top: 5rem;
     box-shadow: #00000029 0px 2px 8px;
 }
@@ -381,15 +391,18 @@ header a:hover {
     font-size: 3rem;
 }
 
+#price-list .container {
+    max-width: 80%;
+    margin: auto;
+}
+
 table {
     text-align: center;
 }
 
 #price-list .table {
-    width: 60%;
+    width: 100%;
     color: #FFF;
-    position: relative;
-    left: 14rem;
 }
 
 #price-list h3 {
@@ -671,6 +684,7 @@ table {
     font-weight: 700;
 }
 
+
 /* List Of Blocked Names Pages */
 #blocked-names{
     margin: 5rem 0;
@@ -690,11 +704,22 @@ table {
 
 /* Dashboard */
 #dashboard{
-    margin: 2rem 0rem 0rem 0;
+    margin: 6rem 0rem 0rem 0;
 }
 
-#collapser {
+nav .sidebar-toggler {
     display: none;
+}
+
+.sidebar{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
 }
 
 .sidebar-heading{
@@ -704,23 +729,33 @@ table {
 }
 
 .list-group-item{
-    margin-left: 1.5rem;
+    margin-left: 0;
     border: none;
 }
 
 .list-group-item a{
     color: #000;
     font-weight: 500;
+    font-size: small;
+    display: block;
+    padding: 22px;
+    text-decoration: none;
+    background: #f5f5f5;
+}
+
+.list-group-item a:hover{
+    border-bottom: 2px solid #000;
 }
 
 .list-group-item img{
-    width: 2rem;
-    margin-right: 1.2rem;
+    width: 1rem;
+    margin-right: 0.5rem;
 }
 
 .dashboard-text{
-    margin-top: 3rem;
-    padding-right: 5rem;
+    margin-left: 175px;
+    padding: 10px 16px;
+    height: auto;
 }
 
 .dashboard-intro p {
@@ -751,6 +786,7 @@ table {
 .dashboard-text textarea{
     border-radius: 0.5rem;
     box-shadow: 0px 3px 8px rgb(184, 181, 181);
+    width: 100%;
 }
 
 .word-counter{
@@ -805,13 +841,24 @@ table {
     background-color: rgb(40, 12, 68);
 }
 
+.buy-container{
+    margin-left: 5rem;
+}
+
+.dashboard-text .buy-container h5{
+    font-size: 1.2rem;
+}
+
 /* Message history Page */
+.schedule-container{
+    max-width: 89%;
+    margin: auto;
+}
 
 .SMS-history{
     display: grid;
-    grid-template-columns: 28rem 15rem;
-
-    grid-column-gap: 10rem;
+    grid-template-columns: 60% 5%;
+    grid-column-gap: 2rem;
 }
 
 .SMS-history .input-group{
@@ -823,12 +870,12 @@ table {
 } 
 
 .search-input{
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 2rem;
 }
 
 .SMS-history .reset-btn{
-    padding: 0.6rem 2rem;
-    margin-left: 2rem;
+    padding: 0.6rem 1.5rem;
+    margin-left: 1rem;
     font-weight: 500;
     border: none;
     background-color: rgb(238, 234, 238);
@@ -842,7 +889,7 @@ table {
 
 .SMS-dropdown .dropdown-menu{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: rgb(238, 234, 238);
 }
 
@@ -861,7 +908,7 @@ table {
 }
 
 .SMS-history-table{
-    margin-top: 10rem;
+    margin-top: 12rem;
 }
 
 .SMS-history-table th{
@@ -965,6 +1012,8 @@ table {
 }
 
 
+
+
 /* Footer section */
 footer {
     margin-top: 2rem;
@@ -1021,75 +1070,27 @@ footer {
 }
 
 
-
-@media only screen and (max-width: 991px){
-    #collapser{
-        display: block;
-    }
-
-    .sidebar{
-        display: flex;
-        float: left;
-    }
-
-    
-}
-
-
-@media only screen and (min-width: 899px){
-    #hamburger{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 990px) {
-
+@media screen and (max-width: 991px){
     /* Pre nav */
-    .pre-nav #row {
-        display: block;
-        text-align: center;
-    }
-
-    .search input {
-        color: #FFF;
-        background-color: #000;
-        opacity: 0.5;
-        padding: 1.2rem 1.5rem;
-    }
-
-    ::placeholder {
-        color: #FFF;
-    }
-
-    .search i {
-        color: #FFF;
-        position: relative;
-        bottom: 1.8rem;
-        float: right;
-        margin-right: 1.2rem;
-    }
-
-    #row a {
-        font-size: 1.5rem;
-        color: #000;
-    }
-
-    .row .fa-sign-out-alt {
-        font-size: 1.7rem;
-        margin: 1.2rem 0;
-    }
-
-    .nav-ul {
+    .pre-nav {
         display: none;
+    }
+
+    /* Navigation Bar */
+    nav h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav .nav-ul {
+        display: flex;
         flex-direction: column;
-        width: 50%;
-        padding: 2rem 0;
+        width: 100%;
+        padding: 1rem 0;
         opacity: 0.8;
         position: absolute;
-        top: 12.5rem;
-        right: 1.5rem;
-        background-color: #000;
-        z-index: 1;
+        top: 4rem;
+        background: rgb(0, 0, 0);
+        right: 2.5rem;
     }
 
     .nav-ul .active {
@@ -1102,54 +1103,10 @@ footer {
     }
 
     .nav-ul.show {
-        display: flex;
+        display: none;
     }
 
-    #hambuger {
+    nav #nav-collapser {
         display: block;
     }
-
-    main {
-        background-image: url(images/bg-image.png);
-        background-size: 250%;
-        background-repeat: no-repeat;
-        color: #FFF;
-        padding-bottom: 2rem;
-    }
-
-    header {
-        text-align: center;
-        margin-top: 3rem;
-        padding: 1rem;
-    }
-
-    .header-text {
-        color: rgb(240, 240, 240);
-        font-weight: 700;
-        /* font-size: 1rem; */
-        line-height: 1.5;
-    }
-
-    header a {
-        color: #FFF;
-        text-decoration: none;
-    }
-
-    header a:hover {
-        text-decoration: none;
-        color: #FFF;
-    }
-
-    .header-btn:hover {
-        border: #FFF solid 2px;
-        background-color: rgb(247, 36, 247);
-    }
-
-    .header-btn {
-        font-size: 1.3rem;
-        margin-top: 1.5rem;
-        padding: 1rem 3rem;
-        border: rgb(247, 36, 247) solid 2px;
-    }
 }
-
